@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema de Calistenia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>🩸 SISTEMA ATIVO</h1>
+
+    <!-- PERFIL DO JOGADOR -->
+    <section class="card">
+      <h2>👤 Jogador</h2>
+      <p><strong>Rank:</strong> <span id="rank">E</span></p>
+      <p><strong>Nível:</strong> <span id="level">1</span></p>
+      <p>
+        <strong>XP:</strong>
+        <span id="xp">0</span> /
+        <span id="xpMax">100</span>
+      </p>
+
+      <button onclick="ganharXP(100)">
+        Completar Missão Diária
+      </button>
+
+      <button onclick="resetarSistema()" class="danger">
+        Resetar Sistema
+      </button>
+    </section>
+
+    <!-- STATUS -->
+    <section class="card">
+      <h2>📊 Status</h2>
+      <ul>
+        <li>💪 Força: <span id="forca">6</span></li>
+        <li>⚡ Potência: <span id="potencia">5</span></li>
+        <li>🧠 Resistência: <span id="resistencia">6</span></li>
+        <li>🤸 Mobilidade: <span id="mobilidade">5</span></li>
+        <li>❤️ Vitalidade: <span id="vitalidade">5</span></li>
+      </ul>
+    </section>
+
+    <!-- MISSÃO DIÁRIA -->
+    <section class="card">
+      <h2>🎯 Missão Diária</h2>
+      <ul class="checklist">
+        <li><input type="checkbox"> 40 Flexões</li>
+        <li><input type="checkbox"> 30 Agachamentos</li>
+        <li><input type="checkbox"> 20 Abdominais</li>
+        <li><input type="checkbox"> 10 Barras / Progressão</li>
+        <li><input type="checkbox"> Mobilidade (5–10 min)</li>
+      </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>⚔️ Evolua um pouco todos os dias.</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
