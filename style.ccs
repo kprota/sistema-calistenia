@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+:root {
+  --bg-main: #020617;
+  --bg-card: rgba(2, 6, 23, 0.85);
+  --blue: #38bdf8;
+  --blue-strong: #0ea5e9;
+  --red: #ef4444;
+  --text-main: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(56,189,248,0.15), transparent 40%),
+    linear-gradient(180deg, #020617, #000);
+  color: var(--text-main);
+  font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 24px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--blue);
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 12px rgba(56,189,248,0.6);
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--blue);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid rgba(56,189,248,0.4);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 22px;
+  box-shadow:
+    0 0 15px rgba(56,189,248,0.15),
+    inset 0 0 20px rgba(56,189,248,0.05);
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* BOTÕES */
+button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, var(--blue), var(--blue-strong));
+  color: #020617;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(56,189,248,0.6);
+}
+
+button.danger {
+  background: linear-gradient(135deg, #f87171, var(--red));
+  color: white;
+}
+
+/* CHECKLIST */
+.checklist input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: var(--blue);
+}
+
+/* XP BAR */
+.xp-bar {
+  margin-top: 10px;
+  width: 100%;
+  height: 14px;
+  border-radius: 8px;
+  background: #020617;
+  border: 1px solid rgba(56,189,248,0.4);
+  overflow: hidden;
+}
+
+.xp-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(
+    90deg,
+    var(--blue),
+    #7dd3fc
+  );
+  box-shadow: 0 0 10px rgba(56,189,248,0.8);
+  transition: width 0.4s ease;
+}
+
+footer {
+  text-align: center;
+  opacity: 0.6;
+  margin-top: 30px;
+  font-size: 12px;
+}
