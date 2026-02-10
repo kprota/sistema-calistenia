@@ -19,6 +19,9 @@ function atualizarHUD() {
   document.getElementById("level").innerText = level;
   document.getElementById("xp").innerText = xp;
   document.getElementById("xpMax").innerText = xpMax;
+  const percent = (player.xp / player.xpMax) * 100;
+document.getElementById("xpFill").style.width = percent + "%";
+
 
   let rank = "E";
   if (level >= 10) rank = "D";
